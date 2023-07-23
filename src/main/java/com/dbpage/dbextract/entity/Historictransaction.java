@@ -35,4 +35,7 @@ public class Historictransaction {
     @JoinColumn(name = "narrativeId",referencedColumnName = "narrativeId")
     private List<Transactionnarrative> transactionnarrativeList;
 */
+    @OneToMany
+    @JoinColumn(name = "narrativeId", referencedColumnName = "narrativeId")
+    private List<Transactionnarrative> transactionnarrativeList;
 }
